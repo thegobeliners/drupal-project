@@ -38,6 +38,7 @@
         "drupal/devel": "^1.2",
         "drupal/module_filter": "^3.1",
         "drupal/webform": "^5.0@RC",
+        "drupal/google_analytics": "^2.2"
     },
     "require-dev": {
         "behat/mink": "~1.7",
