@@ -34,6 +34,7 @@
     "drupal/metatag": "^1.5",
     "drupal/module_filter": "^3.1",
     "drupal/pathauto": "^1.1",
+    "drupal/simple_sitemap": "^2.12",
     "drupal/smtp": "^1.0@beta",
     "drupal/taxonomy_menu": "^3.3",
     "drupal/twig_tweak": "^1.9",
