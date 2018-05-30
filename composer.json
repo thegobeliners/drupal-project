@@ -36,6 +36,7 @@
     "drupal/module_filter": "^3.1",
     "drupal/pathauto": "^1.1",
     "drupal/recaptcha": "^2.3",
+    "drupal/search404": "1.x-dev",
     "drupal/simple_sitemap": "^2.12",
     "drupal/smtp": "^1.0@beta",
     "drupal/taxonomy_menu": "^3.3",
