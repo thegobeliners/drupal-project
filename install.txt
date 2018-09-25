@@ -1,0 +1,1 @@
+composer create-project thegobeliners-drupal-composer/drupal-project my-site --stability dev --no-interaction
