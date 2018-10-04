@@ -29,6 +29,7 @@
     "drupal/devel": "^1.2",
     "drupal/easy_breadcrumb": "^1.8",
     "drupal/google_analytics": "^2.3",
+    "drupal/httpbl": "1.x-dev",
     "drupal/image_widget_crop": "^2.2",
     "drupal/linkit": "^4.3",
     "drupal/mailsystem": "^4.1",
