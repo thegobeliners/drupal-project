@@ -1,3 +1,11 @@
-Remplacer "tgbsite" par le nom de dossier souhaité.
+Remplacer "tgbsite" par le nom souhaité dans la commande ci-dessous.
 
 composer create-project thegobeliners-drupal-composer/drupal-project tgbsite --stability dev --no-interaction && cd tgbsite/ && git clone git@bitbucket.org:thegobeliners/base_drupal.git && cp -R base_drupal/* . && rm -rf .git/ base_drupal/
+
+Après l'installation rechercher / remplacer "tgbsite" par le nom souhaité dans tous les fichiers.
+
+Lancer Docker
+
+Instalation de Drupal
+
+Remplacer le fichier /web/sites/site.php par celui nommé _site.php
