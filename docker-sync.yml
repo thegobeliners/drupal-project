@@ -1,0 +1,6 @@
+version: "2"
+syncs:
+  tgbsite-sync:
+    src: './'
+    sync_userid: 82
+    sync_excludes: ['.git', '.idea', 'docker-runtime', 'drush', 'scripts', '.gitignore', '.travis.yml', 'composer.json', 'composer.lock', 'docker-compose.yml', 'docker-sync.yml', 'koala-config.json', 'LICENSE', 'phpunit.xml.dist', 'READLE.md', '*.scss', '.DS_Store']

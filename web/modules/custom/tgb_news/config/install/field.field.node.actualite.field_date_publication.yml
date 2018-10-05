@@ -1,0 +1,23 @@
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_publication
+    - node.type.actualite
+  module:
+    - datetime
+id: node.actualite.field_date_publication
+field_name: field_date_publication
+entity_type: node
+bundle: actualite
+label: 'Date publication'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

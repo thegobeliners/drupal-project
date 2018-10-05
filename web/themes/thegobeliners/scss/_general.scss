@@ -1,0 +1,489 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-break: keep-all;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    outline: none;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.2rem * $font-size-base;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+main,
+header,
+footer {
+    position: relative;
+}
+
+.page {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem * $font-size-base;
+    line-height: 3.7rem * $font-size-base;
+}
+
+h2 {
+    font-size: 3rem * $font-size-base;
+    line-height: 3.2rem * $font-size-base;
+}
+
+h3 {
+    font-size: 2.5rem * $font-size-base;
+    line-height: 2.7rem * $font-size-base;
+}
+
+h4 {
+    font-size: 2rem * $font-size-base;
+    line-height: 2.2rem * $font-size-base;
+}
+
+h5 {
+    font-size: 1.8rem * $font-size-base;
+    line-height: 2.0rem * $font-size-base;
+}
+
+h6 {
+    font-size: 1.6rem * $font-size-base;
+    line-height: 1.8rem * $font-size-base;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #555;
+}
+
+p {
+    margin-bottom: 0.5rem * $font-size-base;
+}
+
+strong {
+    font-weight: 700;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 3rem * $font-size-base;
+}
+
+ul li {
+    margin-bottom: 0.5rem * $font-size-base;
+}
+
+ol {
+    padding: 0;
+    margin: 0 0 0 3rem * $font-size-base;
+}
+
+ol li {
+    margin-bottom: 0.5rem * $font-size-base;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-size: 2rem * $font-size-base;
+}
+
+.btn {
+    border-radius: 3px;
+    font-size: 1.3rem * $font-size-base;
+    display: inline-block;
+    padding: 0.4rem * $font-size-base 0.8rem * $font-size-base;
+    top: 0;
+}
+
+.btn.x2 {
+    padding: 0.8rem * $font-size-base 1.6rem * $font-size-base;
+}
+
+.txtjustify,
+.txtjustify p {
+    text-align: justify;
+}
+
+.maj {
+    text-transform: uppercase;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.transition,
+.transition:after,
+.transition:before {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.v-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.inverse [class*=" grid-"],
+.inverse [class^=grid-] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.cover {
+    background: no-repeat center;
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.mask~* {
+    position: relative;
+    z-index: 2;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear-after {
+    display: block;
+}
+
+.clear-after:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0 !important;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    color: white;
+}
+
+/* ************************ START PRELOADER ************************ */
+
+#preloader,
+#preloader {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background: #000;
+    z-index: 9999;
+    color: #000;
+}
+
+#status {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* ************************ END PRELOADER ************************ */
+
+/* ************************ START POPUP MESSAGE ************************ */
+
+#infos_message {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#content_infos_message {
+    position: absolute;
+    width: 500px;
+    max-width: 90%;
+    max-height: 30%;
+    z-index: 110;
+    top: 30%;
+    left: 50%;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    overflow: auto;
+}
+
+#close_infos_message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#close_infos_message:before,
+#close_infos_message:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #000;
+}
+
+#close_infos_message:before {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#close_infos_message:after {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#close_infos_message:hover:before,
+#close_infos_message:hover:after {
+    background-color: #555;
+}
+
+/* ************************ END POPUP MESSAGE ************************ */
+
+/* ************************ START MENU CRUD ************************ */
+
+#menu-crud {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 30px;
+    border-top: 1px solid #fff;
+    background: #333;
+    text-align: center;
+    z-index: 9999;
+}
+
+#menu-crud ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-crud ul li {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0 1rem * $font-size-base;
+}
+
+#menu-crud ul li a {
+    color: #fff;
+    line-height: 2.8rem * $font-size-base;
+}
+
+#menu-crud ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ************************ END MENU CRUD ************************ */
+
+/* ************************ START BREADCRUMB ************************ */
+
+#breadcrumb {
+    padding: 1rem * $font-size-base 5vw;
+    position: absolute;
+    top: 85px;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#breadcrumb div span[class^=icon] {
+    display: inline-block;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    font-size: 0.6rem * $font-size-base;
+}
+
+#breadcrumb div span[class^=icon]:before {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#breadcrumb div a:first-child span[class^=icon] {
+    display: inline-block;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    font-size: 0.6rem * $font-size-base;
+}
+
+#breadcrumb a,
+#breadcrumb span {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Lato;
+    font-size: 1rem * $font-size-base;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.122rem * $font-size-base;
+}
+
+#breadcrumb a.breadcrumb-last,
+#breadcrumb span.breadcrumb-last {
+    color: #fff;
+}
+
+#breadcrumb [class^=icon] {
+    margin-right: 0.5rem * $font-size-base;
+    position: relative;
+    top: -1px;
+}
+
+#breadcrumb a [class^=icon] {
+    margin-right: 0;
+    top: 0px;
+}
+
+#breadcrumb .delimiter {
+    margin: 0 1.5rem * $font-size-base 0 1rem * $font-size-base;
+    position: relative;
+}
+
+#breadcrumb .delimiter:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    top: -19px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ************************ END BREADCRUMB ************************ */
+
+/* ************************ START PAGE 404 SEARCH ************************ */
+
+/* Page 404 Search */
+.page-search .search-help-link,
+.page-search .search-advanced.js-form-wrapper.form-wrapper {
+    display: none;
+}
+
+.page-search .pager {
+    margin-top: 5rem * $font-size-base;
+}
+
+.page-search .pager ul.pager__items {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.page-search .pager ul.pager__items:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0 !important;
+}
+
+.page-search .pager ul.pager__items li {
+    float: left;
+    margin-right: 1rem * $font-size-base;
+}
+
+.page-search ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-search ol>li {
+    margin-bottom: 2.5rem * $font-size-base;
+}
+
+.page-search ol>li>h3>a {
+    font-size: 1.6rem * $font-size-base;
+    font-weight: 700;
+    line-height: 2rem * $font-size-base;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin-bottom: 0.5rem * $font-size-base;
+}
+
+.page-search ol>li>p {
+    font-size: 1.6rem * $font-size-base;
+    line-height: 2.7rem * $font-size-base;
+}
+
+/* ************************ END PAGE 404 SEARCH ************************ */

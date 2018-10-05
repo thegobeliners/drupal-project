@@ -1,0 +1,83 @@
+input,
+textarea,
+select {
+    border-radius: 3px;
+    padding: 1rem * $font-size-base;
+    margin: 1rem * $font-size-base 0;
+    max-width: calc(100vw - 4rem * $font-size-base);
+    background-color: #f7f7f7;
+    color: #818181;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+    width: 100%;
+}
+
+textarea {
+    padding: 2rem * $font-size-base;
+    width: 100%;
+}
+
+fieldset {
+    position: relative;
+    max-width: 100%;
+    padding: 0;
+}
+
+select {
+    height: 45px;
+    width: 100%;
+}
+
+.select2 {
+    margin-bottom: 2rem * $font-size-base;
+}
+
+label {
+    font-size: 13px;
+    margin: 2rem * $font-size-base 0 1rem * $font-size-base;
+    color: #6F6F6F;
+    display: block;
+    text-transform: none;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    background-color: #000;
+    display: inline-block;
+    padding: 8px 16px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-item-nom,
+.form-item-prenom,
+.form-item-telephone,
+.form-item-mail {
+    width: 50%;
+    float: left;
+}
+
+.form-item-nom,
+.form-item-telephone {
+    padding-right: 1rem * $font-size-base;
+}
+
+.form-item-prenom,
+.form-item-mail {
+    padding-left: 1rem * $font-size-base;
+}
+
+#maps {
+    height: 500px;
+}

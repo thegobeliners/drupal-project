@@ -1,0 +1,10 @@
+<ul class="transition">
+    {%- for item in links -%}
+        <li{{ item.attributes }}>
+            {{ item.link }}
+
+            <img src="/{{ directory }}/images/lang/{{ item.text ~ '.svg' }}" alt="{{ item.text }}">
+        </li>
+    {%- endfor -%}
+</ul>
+

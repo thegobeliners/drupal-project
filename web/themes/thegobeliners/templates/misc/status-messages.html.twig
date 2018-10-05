@@ -1,0 +1,27 @@
+<div id="infos_message">
+    <div id="content_infos_message">
+        <div id="close_infos_message"></div>
+
+        {% if message_list is not empty %}
+            <div class="center p-3">
+                {% for type, messages in message_list %}
+                    {% if status_headings[type] %}
+                        <h4>{{ status_headings[type] }}</h4>
+                    {% endif %}
+
+                    {% if messages|length > 1 %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>{{ messages|first }}</p>
+                    {% endif %}
+
+                    {% if type == 'error' %}{% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
