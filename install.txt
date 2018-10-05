@@ -1,1 +1,1 @@
-composer create-project thegobeliners-drupal-composer/drupal-project tgbsite --stability dev --no-interaction
+composer create-project thegobeliners-drupal-composer/drupal-project tgbsite --stability dev --no-interaction && cd tgbsite/ && git clone git@bitbucket.org:thegobeliners/base_drupal.git && rm -rf .git/
