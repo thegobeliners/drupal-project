@@ -2,3 +2,4 @@
 /drush/
 /vendor/
 /web/
+\.DS_Store
