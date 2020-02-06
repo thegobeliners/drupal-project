@@ -9,3 +9,8 @@ Lancer Docker
 Instalation de Drupal
 
 Remplacer le fichier /web/sites/site.php par celui nommé _site.php
+
+
+update packages : 
+
+composer require drupal/admin_toolbar drupal/adminimal_admin_toolbar drupal/adminimal_theme drupal/better_exposed_filters drupal/captcha drupal/devel drupal/easy_breadcrumb drupal/google_analytics drupal/httpbl drupal/image_widget_crop drupal/linkit drupal/mailsystem drupal/metatag drupal/module_filter drupal/pathauto drupal/recaptcha drupal/redirect drupal/search404 drupal/simple_sitemap drupal/smtp drupal/taxonomy_menu drupal/twig_tweak drupal/views_infinite_scroll drupal/views_taxonomy_term_name_depth drupal/webform
